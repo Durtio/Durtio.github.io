@@ -13,7 +13,7 @@ if (!error_get_last()) {
   $category = $_POST['category'];
   $service = $_POST['service'];
   $date = $_POST['date'];
-  $time = $_POST['time'];
+  $comm = $_POST['comment'];
 
 
   // Формирование самого письма
@@ -25,7 +25,7 @@ if (!error_get_last()) {
     <b>Категория:</b>$category<br>
     <b>Услуга:</b>$service<br>
     <b>Дата:</b>$date<br>
-    <b>Желаемое время</b>$time<br>
+    <b>Дополнительная информация:</b>$comm<br>
     ";
 
   // Настройки PHPMailer
