@@ -24,7 +24,7 @@ const categorySelect = document.getElementById('category');
 const serviceSelect = document.getElementById('service');
 const timeSelect = document.getElementById('time');
 
-categorySelect.addEventListener('change', () => {
+categorySelect.addEventListener('input', () => {
   const selectedCategory = categorySelect.value;
   const options = serviceSelect.querySelectorAll('option');
 
