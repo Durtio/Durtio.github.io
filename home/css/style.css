@@ -12,7 +12,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
+@media only screen and (max-width: 768px) {
+  body {
+      background-attachment: scroll; /* Изменяем на scroll для мобильных устройств */
+  }
+}
 .block {
     background-color: #ddd;
     border: solid 1px #aaa;
