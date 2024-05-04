@@ -126,8 +126,8 @@ padding: 0;
 	}
   .service {
     min-height: 250px;
-    margin-bottom: -25%;
-    max-width: 100%;
+    margin-bottom: -20%;
+    max-width: 105%;
   }
 }
 
@@ -491,8 +491,8 @@ a {
   
   font-size: 11px;
   text-align: center;
-  padding-left: 5%;
-  padding-top: 5%;
+  margin-left: 5%;
+  
 }
 .name_employee {
 
