@@ -181,6 +181,7 @@ padding: 0;
 
 .card-name {
 margin-top: 5%;
+font-size: 20px;
 }
 
 .card-job {
@@ -192,7 +193,7 @@ details{
   border-radius: 8px;
   overflow:hidden;
   margin-bottom: 1.5rem;
-  
+  margin-top: 5%
 }
 summary::-webkit-details-marker{display:none;}
 summary::-moz-list-bullet{list-style-type:none;}
