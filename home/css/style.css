@@ -55,15 +55,16 @@ padding: 0;
 }
 
 .service {
-    min-height: 250px;
-    margin-bottom: 150px;
-    max-width: 100%;
+  min-height: 250px;
+  margin-bottom: 1%;
+  max-width: 100%;
 }
 
+
 .img_service {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
 .wrapper{
@@ -123,6 +124,11 @@ padding: 0;
 	.slider {
 		padding: 0px 40px;
 	}
+  .service {
+    min-height: 250px;
+    margin-bottom: -25%;
+    max-width: 100%;
+  }
 }
 
 .slider .slick-arrow{
@@ -483,9 +489,9 @@ a {
 }
 .service_card {
   
-  font-size: 30px;
+  font-size: 10px;
   text-align: center;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-top: 5%;
 }
 .name_employee {
