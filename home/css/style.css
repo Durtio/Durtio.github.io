@@ -182,7 +182,6 @@ padding: 0;
 details{
   display:block;
   background: #fff;
-  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   overflow:hidden;
   margin-bottom: 1.5rem;
@@ -194,7 +193,6 @@ summary::marker{display:none;}
 summary {
    padding: .3em .3em .3em 1.4em;
    position: relative;
-   border-bottom: 1px solid #e2e8f0;
 }
 summary:before {  
 }
