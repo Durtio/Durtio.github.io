@@ -179,6 +179,9 @@ padding: 0;
     overflow-y: auto; /* Добавляем вертикальную прокрутку, если содержимое превышает высоту блока */
 }
 
+.card-text {
+margin-top: 5%;
+}
 details{
   display:block;
   background: #fff;
