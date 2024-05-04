@@ -22,9 +22,8 @@ $(document).ready(function(){
 
 const categorySelect = document.getElementById('category');
 const serviceSelect = document.getElementById('service');
-const timeSelect = document.getElementById('time');
 
-categorySelect.addEventListener('input', () => {
+categorySelect.addEventListener('change', () => {
   const selectedCategory = categorySelect.value;
   const options = serviceSelect.querySelectorAll('option');
 
