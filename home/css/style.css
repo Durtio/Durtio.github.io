@@ -867,11 +867,14 @@ form {
 }
 
 .category-btn {
+  width: 100px;
+  height: 50px;
   margin-right: 5px;
   background-color: #f4e2e2;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
+  font-size: 10px;
 }
 
 #services-list {
@@ -899,8 +902,8 @@ background: rgba(249, 242, 242, 0.8);
 
 @media (min-width: 768px) {
   .category-btn {
-    width: 200px;
-    height: 40px;
+    width: 120px;
+    height: 50px;
     margin-right: 5px;
     background-color: #f4e2e2;
     margin-top: 10px;
@@ -915,9 +918,20 @@ background: rgba(249, 242, 242, 0.8);
 @media (min-width: 992px) {
   .services-block {
     font-size: 20px;
+    
   }
   .category-btn {
-    font-size: 20px;
+    font-size: 13px;
+    height: 60px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .category-btn {
+    font-size: 16px;
+    height: 60px;
+    width: 200px;
   }
 }
 
