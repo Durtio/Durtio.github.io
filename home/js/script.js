@@ -97,8 +97,3 @@ modal.addEventListener('click', (e) => {
   }
 });
 
-function debout (...args) {
-  const out = document.getElementbyId('debout');
-  if (out)
-      out.innerHTML += args.map (a => '' +a).join(', ') + '<br>';
-}
