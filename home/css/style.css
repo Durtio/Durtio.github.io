@@ -297,7 +297,7 @@ font-size: small;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-left: -10%;
-    -webkit-appearance: none;
+    
   }
   
   /* Стили для заголовка */
@@ -348,6 +348,9 @@ font-size: small;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+  }
+  select, option {
+    -webkit-appearance:none;
   }
   
   input[type="submit"]:hover {
