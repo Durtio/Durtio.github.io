@@ -30,8 +30,10 @@ categorySelect.addEventListener('change', () => {
   options.forEach((option) => {
     if (option.dataset.category === selectedCategory || option.value === '') {
       option.style.display = 'block';
+      option.disabled = false;
     } else {
       option.disabled = true;
+      option.disabled = 'none';
     }
   });
   serviceSelect.value = '';
