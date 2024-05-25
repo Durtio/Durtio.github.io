@@ -33,7 +33,7 @@ categorySelect.addEventListener('change', () => {
       option.disabled = false;
     } else {
       option.disabled = true;
-      option.disabled = 'none';
+      option.style.display = 'none';
     }
   });
   serviceSelect.value = '';
