@@ -31,7 +31,7 @@ categorySelect.addEventListener('change', () => {
     if (option.dataset.category === selectedCategory || option.value === '') {
       option.style.display = 'block';
     } else {
-      option.style.display = 'none';
+      option.disabled = true;
     }
   });
   serviceSelect.value = '';
@@ -69,7 +69,7 @@ async function submitForm(event) {
 
 
 
-// Получаем ссылки на элементы
+// Ссылки на элементы
 const openModalBtn = document.getElementById('openModalBtn');
 const openModalBtn2 = document.getElementById('openModalBtn2');
 const modal = document.getElementById('modale');

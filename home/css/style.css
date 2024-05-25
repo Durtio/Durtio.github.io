@@ -35,6 +35,63 @@ padding: 0;
 .head_about {
   margin-top: -6%;
 }
+.logo {
+  padding-left: 17%;
+  padding-top: 5%;
+  height: 100%;
+}
+.logo_img {
+  max-width: 83px;
+}
+.navbar1 {
+  
+  height: 100%;
+  padding-top: 20%;
+}
+.nav1 {
+ margin-left: 40%;
+ 
+ color: rgb(255, 255, 255);
+ font-size: 15px;
+ text-decoration-line: none;
+}
+.navbutt {
+  height: 100%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 151px;
+  height: 42px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+.black {
+  background-color: #000;
+  color: white;
+  border: 2px solid white;
+  margin-top: 5%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 19px;
+}
+.navphone {
+  height: 100%;
+padding-top: 2%;
+ color: black;
+ font-size: 16px;
+}
+.phoneapp {
+  max-width: 170px;
+  margin-left: 7%;
+}
+.nav_number {
+  font-size: 16px;
+}
+
 .appointment {
     min-height: 100%;
     max-width: 100%;
@@ -391,65 +448,7 @@ font-size: small;
   }
 }
 
-.logo {
-  
-  padding-left: 17%;
-  padding-top: 5%;
-  height: 100%;
-}
-.logo_img {
-  max-width: 83px;
-}
-.navbar1 {
-  
-  height: 100%;
-  padding-top: 20%;
-}
-.nav1 {
- margin-left: 40%;
- 
- color: rgb(255, 255, 255);
- font-size: 15px;
- text-decoration-line: none;
-}
 
-.navbutt {
-  height: 100%;
-  padding-top: 5%;
-  padding-left: 10%;
-}
-.white {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  width: 151px;
-  height: 42px;
-  border-radius: 10px;
-  font-size: 13px;
-}
-.black {
-  background-color: #000;
-  color: white;
-  border: 2px solid white;
-  margin-top: 5%;
-  height: 50px;
-  border-radius: 20px;
-  font-size: 19px;
-}
-.navphone {
-  height: 100%;
-padding-top: 2%;
-
- color: black;
- font-size: 16px;
-}
-.phoneapp {
-  max-width: 170px;
-  margin-left: 7%;
-}
-.nav_number {
-  font-size: 16px;
-}
 a {
   
   color: black;
