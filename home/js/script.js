@@ -122,7 +122,7 @@ categorySelect.addEventListener('change', () => {
       opt.value = option.value;
       opt.textContent = option.text;
       opt.setAttribute('data-category', option.category);
-      remove(option);
+      option.parentNode.removeChild(option);
     });
   }
   populateSelect(services);
