@@ -131,7 +131,7 @@ categorySelect.addEventListener('change', () => {
     if (option.dataset.category === selectedCategory || option.value === '') {
       option.style.display = 'block';
     } else {
-      option.parentNode.removeChild(option);
+      serviceSelect.removeChild(option);
     }
   });
   serviceSelect.value = '';
