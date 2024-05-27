@@ -122,7 +122,7 @@ categorySelect.addEventListener('change', () => {
       opt.value = option.value;
       opt.textContent = option.text;
       opt.setAttribute('data-category', option.category);
-      serviceSelect.appendChild(opt);
+      remove(option);
     });
   }
   populateSelect(services);
@@ -131,7 +131,7 @@ categorySelect.addEventListener('change', () => {
     if (option.dataset.category === selectedCategory || option.value === '') {
       option.style.display = 'block';
     } else {
-      serviceSelect.removeChild(option);
+      option.remove();
     }
   });
   serviceSelect.value = '';
