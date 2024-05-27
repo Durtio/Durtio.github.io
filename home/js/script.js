@@ -128,7 +128,7 @@ categorySelect.addEventListener('change', () => {
   populateSelect(services);
 
   options.forEach((option) => {
-    if (option.dataset.category === selectedCategory || option.value === '') {
+    if (option.dataset.category === selectedCategory) {
       option.style.display = 'block';
     } else {
       option.parentNode.removeChild(option);
