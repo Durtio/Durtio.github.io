@@ -52,7 +52,7 @@ padding: 0;
  margin-left: 40%;
  
  color: rgb(0, 0, 0);
- font-size: 15px;
+ font-size: 10px;
  text-decoration-line: none;
 }
 .navbutt {
@@ -592,7 +592,7 @@ padding-bottom: 5%;
 .nav1 {
   margin-left: 20%;
   color: rgb(0, 0, 0);
-  font-size: 17px;
+  font-size: 12px;
   text-decoration-line: none;
 }
 .head_about {
@@ -772,7 +772,7 @@ form {
 }
 .navbar1 {
   height: 100%;
-  padding-top: 20%;
+  padding-top: 25%;
 }
 .white {
   background-color: white;
