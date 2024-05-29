@@ -51,7 +51,7 @@ padding: 0;
 .nav1 {
  margin-left: 40%;
  
- color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
  font-size: 15px;
  text-decoration-line: none;
 }
@@ -350,7 +350,7 @@ font-size: small;
     cursor: pointer;
   }
   select, option {
-    -webkit-appearance:none;
+    -webkit-appearance: none;
   }
   
   input[type="submit"]:hover {
@@ -375,16 +375,16 @@ font-size: small;
   width: 100%;
   height: 100%;
   overflow: auto;
-  backdrop-filter: blur(5px); /* Добавляем эффект размытия фона */
-  animation: fadeIn 0.5s ease-in-out; /* анимация появления */
+  backdrop-filter: blur(5px); 
+  animation: fadeIn 0.5s ease-in-out; 
 }
 
 .modale-content {
 	background: none;
   margin: 5% 30%;
   width: 500px;
-  opacity: 1; /* Устанавливаем прозрачность блока */
-  transition: opacity 0.3s ease; /* Добавляем плавный переход для прозрачности */
+  opacity: 1; 
+  transition: opacity 0.3s ease;
   
 }
 
@@ -591,8 +591,7 @@ padding-bottom: 5%;
 }
 .nav1 {
   margin-left: 20%;
-  
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 17px;
   text-decoration-line: none;
 }
@@ -710,9 +709,8 @@ form {
 }
 .nav1 {
   margin-left: 20%;
-  
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
   text-decoration-line: none;
 }
 .navbar1 {
@@ -768,8 +766,8 @@ form {
 @media (min-width: 1400px) {
   .nav1 {
     margin-left: 20%;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     text-decoration-line: none;
 }
 .navbar1 {
