@@ -558,7 +558,7 @@ padding-bottom: 5%;
 .foo-social {
   color: white;
   font-size: 8px;
-  margin-top:10%;
+  margin-top:5%;
 }
 
 .ya_size {
@@ -682,12 +682,14 @@ padding-bottom: 5%;
   padding: 17px;
 }
 .smicon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10%;
 }
 .smlist {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 35%;
 }
 .foo-social {
   font-size: 15px;
@@ -759,6 +761,12 @@ form {
 }
 .modale-content {
   margin: 5% 15%;
+}
+.smlist {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -7%;
+  margin-left: 55%;
 }
 }
 
@@ -848,8 +856,9 @@ form {
   margin: 5% 25%;
 }
 .smicon {
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
+  margin-left: 15%;
 }
 .foo-social {
   font-size: 19px;
