@@ -237,28 +237,3 @@ function showServices(category) {
     activeButton.classList.add('active');
   }
   
-  // Получаем ссылки на элементы
-const openModalBtn = document.getElementById('openModalBtn');
-const modal = document.getElementById('modale');
-const closeBtn = modal.querySelector('.close');
-
-// Функция для открытия модального окна
-function openModal() {
-  modal.style.display = 'block';
-  modal.classList.add('animation');
-}
-
-// Функция для закрытия модального окна
-function closeModal() {
-  modal.style.display = 'none';
-  modal.classList.remove('animation');
-}
-
-// События для открытия и закрытия модального окна
-openModalBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
