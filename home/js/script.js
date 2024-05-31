@@ -21,10 +21,11 @@ $(document).ready(function(){
 });
 
 const categorySelect = document.getElementById('category');
-const serviceSelect = document.getElementById('service');
+
 
 categorySelect.addEventListener('change', () => {
   const selectedCategory = categorySelect.value;
+  const serviceSelect = document.getElementById('service');
   const options = serviceSelect.querySelectorAll('option');
   const services = [ 
     { value: 'Мужская стрижка', text: 'Мужская стрижка', category: 'Стрижки и окрашивания' },
@@ -115,6 +116,7 @@ categorySelect.addEventListener('change', () => {
   ];
 
   serviceSelect.innerHTML = '';
+  
 
   function populateSelect(options) {
     options.forEach(option => {
@@ -122,19 +124,30 @@ categorySelect.addEventListener('change', () => {
       opt.value = option.value;
       opt.textContent = option.text;
       opt.setAttribute('data-category', option.category);
-      
+      serviceSelect.appendChild(opt);
     });
   }
   populateSelect(services);
 
-  options.forEach((option) => {
-    if (option.dataset.category === selectedCategory) {
-      option.style.display = 'block';
-    } else {
-      option.parentNode.removeChild(option);
+  function filterOptionsByCategory(category) {
+    // Удаляем все опции
+    while (serviceSelect.options.length > 0) {
+        serviceSelect.remove(0);
     }
-  });
-  serviceSelect.value = '';
+    // Добавляем обратно только те, которые соответствуют выбранной категории
+    services.forEach(service => {
+        if (service.category === category) {
+            const opt = document.createElement('option');
+            opt.value = service.value;
+            opt.textContent = service.text;
+            opt.setAttribute('data-category', service.category);
+            serviceSelect.appendChild(opt);
+        }
+    });
+    serviceSelect.value = ''; // Сбрасываем выбранное значение
+}
+filterOptionsByCategory(selectedCategory);
+
 });
 async function submitForm(event) {
   event.preventDefault(); 
