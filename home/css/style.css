@@ -57,8 +57,9 @@ padding: 0;
  margin-left: 40%;
  
  color: rgb(0, 0, 0);
- font-size: 10px;
+ font-size: 11px;
  text-decoration-line: none;
+ font-weight: bold;
 }
 .navbutt {
   height: 100%;
