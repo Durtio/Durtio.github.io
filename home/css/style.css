@@ -496,7 +496,7 @@ a {
   text-align: center;
   height: 100%;
   
-  font-size: 35px;
+  font-size: 30px;
 }
 .service_card {
   
@@ -885,14 +885,15 @@ form {
 }
 
 .category-btn {
-  width: 100px;
-  height: 50px;
-  margin-right: 5px;
-  background-color: #f4e2e2;
+  width: 150px;
+  height: 200px;
+  background-color: #d2a47b;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
   font-size: 10px;
+  font-weight: bold;
+  margin-left: 5%;
 }
 
 #services-list {
@@ -920,17 +921,26 @@ background: rgba(249, 242, 242, 0.8);
 form {
   text-align: center;
 }
+.img-category-btn {
+  width: 90%;
+  height: 80%;
+  margin-top: 5%;
+}
+.text-category-btn {
+  margin-top:5%
+}
+
 /* ------------------------MEDIUM------------------------------------------------------------------ */
 
 @media (min-width: 768px) {
   .category-btn {
-    width: 120px;
-    height: 50px;
+    width: 200px;
+    height: 250px;
     margin-right: 5px;
-    background-color: #f4e2e2;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
+    margin-left: 10%;
   }
   
 }
@@ -944,16 +954,19 @@ form {
   }
   .category-btn {
     font-size: 13px;
-    height: 60px;
-    width: 130px;
+    height: 350px;
+    width: 300px;
+    margin-left: 10%;
   }
 }
 
 @media (min-width: 1400px) {
   .category-btn {
     font-size: 16px;
-    height: 60px;
-    width: 200px;
+    height: 350px;
+    width: 300px;
+    margin-left: 10%;
+  
   }
 }
 
