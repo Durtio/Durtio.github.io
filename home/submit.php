@@ -40,14 +40,14 @@ if (!error_get_last()) {
 
   // Настройки вашей почты
   $mail->Host = 'smtp.mail.ru'; // SMTP сервера вашей почты
-  $mail->Username = 'i.5555qa@bk.ru'; // Логин на почте
-  $mail->Password = 'N2qEeNiWzeuwm1s3Zf6b'; // Пароль на почте
+  $mail->Username = 'beautyhome.send@inbox.ru'; // Логин на почте
+  $mail->Password = 'Xpxi9nBKR6fqpy0MBj7v'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port = 465;
-  $mail->setFrom('i.5555qa@bk.ru', 'Игнат'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('beautyhome.send@inbox.ru', ''); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('meowgamer112@gmail.com');
+  $mail->addAddress('beautyhome.eysk@gmail.com');
 
   // Отправка сообщения
   $mail->isHTML(true);
@@ -67,15 +67,56 @@ if (!error_get_last()) {
   $data['result'] = "error";
   $data['info'] = "В коде присутствует ошибка";
   $data['desc'] = error_get_last();
+  // Отправка результата
+  header('Content-Type: application/json');
+  echo json_encode($data);
 }
 
-// Отправка результата
-header('Content-Type: application/json');
-echo json_encode($data);
 
 
 
+// HTML-код для отображения сообщения и перенаправления
+echo '<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Спасибо за вашу заявку</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+                background-color: #f4f4f4;
+            }
+            .message {
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+            }
+            .message h2 {
+                color: #333;
+            }
+            .message p {
+                font-size: 18px;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="message">
+            <h2>Спасибо за вашу заявку!</h2>
+            <p>Ожидайте звонка, скоро с вами свяжется администратор для подтверждения.</p>
+            <p>Вы будете перенаправлены на главную страницу через несколько секунд.</p>
+        </div>
 
+        <script>
+            setTimeout(function() {
+                document.location.href = "index.html";
+            }, 5000); // Таймер на 5 секунд
+        </script>
+    </body>
+</html>';
 
 
 
